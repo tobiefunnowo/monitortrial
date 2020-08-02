@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B97973024D7682000125640 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97972F24D7682000125640 /* SignUpViewController.swift */; };
+		2BD64AB224D77FE30011AE31 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64AB124D77FE30011AE31 /* LoginViewController.swift */; };
 		CE5CE3AE24A7827C00E02AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CE3AD24A7827C00E02AAD /* AppDelegate.swift */; };
-		CE5CE3B024A7827C00E02AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CE3AF24A7827C00E02AAD /* ViewController.swift */; };
+		CE5CE3B024A7827C00E02AAD /* LoginOrSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CE3AF24A7827C00E02AAD /* LoginOrSignUpViewController.swift */; };
 		CE5CE3B324A7827C00E02AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5CE3B124A7827C00E02AAD /* Main.storyboard */; };
 		CE5CE3B524A7827D00E02AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5CE3B424A7827D00E02AAD /* Assets.xcassets */; };
 		CE5CE3B824A7827D00E02AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5CE3B624A7827D00E02AAD /* LaunchScreen.storyboard */; };
@@ -34,9 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B97972F24D7682000125640 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		2BD64AB124D77FE30011AE31 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE5CE3AA24A7827C00E02AAD /* MonitorTrial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonitorTrial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5CE3AD24A7827C00E02AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE5CE3AF24A7827C00E02AAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE5CE3AF24A7827C00E02AAD /* LoginOrSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSignUpViewController.swift; sourceTree = "<group>"; };
 		CE5CE3B224A7827C00E02AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE5CE3B424A7827D00E02AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE5CE3B724A7827D00E02AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				CE5CE3AD24A7827C00E02AAD /* AppDelegate.swift */,
-				CE5CE3AF24A7827C00E02AAD /* ViewController.swift */,
+				CE5CE3AF24A7827C00E02AAD /* LoginOrSignUpViewController.swift */,
 				CE5CE3B124A7827C00E02AAD /* Main.storyboard */,
 				CE5CE3B424A7827D00E02AAD /* Assets.xcassets */,
 				CE5CE3B624A7827D00E02AAD /* LaunchScreen.storyboard */,
 				CE5CE3B924A7827D00E02AAD /* Info.plist */,
+				2B97972F24D7682000125640 /* SignUpViewController.swift */,
+				2BD64AB124D77FE30011AE31 /* LoginViewController.swift */,
 			);
 			path = MonitorTrial;
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5CE3B024A7827C00E02AAD /* ViewController.swift in Sources */,
+				2BD64AB224D77FE30011AE31 /* LoginViewController.swift in Sources */,
+				2B97973024D7682000125640 /* SignUpViewController.swift in Sources */,
+				CE5CE3B024A7827C00E02AAD /* LoginOrSignUpViewController.swift in Sources */,
 				CE5CE3AE24A7827C00E02AAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
