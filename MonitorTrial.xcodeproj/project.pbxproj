@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2B97973024D7682000125640 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97972F24D7682000125640 /* SignUpViewController.swift */; };
 		2BD64AB224D77FE30011AE31 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64AB124D77FE30011AE31 /* LoginViewController.swift */; };
+		2BD64AB424D785380011AE31 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64AB324D785380011AE31 /* CustomButton.swift */; };
+		2BD64AB724D788260011AE31 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64AB524D788260011AE31 /* OptionsViewController.swift */; };
 		CE5CE3AE24A7827C00E02AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CE3AD24A7827C00E02AAD /* AppDelegate.swift */; };
 		CE5CE3B024A7827C00E02AAD /* LoginOrSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CE3AF24A7827C00E02AAD /* LoginOrSignUpViewController.swift */; };
 		CE5CE3B324A7827C00E02AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5CE3B124A7827C00E02AAD /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		2B97972F24D7682000125640 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2BD64AB124D77FE30011AE31 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2BD64AB324D785380011AE31 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		2BD64AB524D788260011AE31 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		CE5CE3AA24A7827C00E02AAD /* MonitorTrial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonitorTrial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5CE3AD24A7827C00E02AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE5CE3AF24A7827C00E02AAD /* LoginOrSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSignUpViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				CE5CE3B924A7827D00E02AAD /* Info.plist */,
 				2B97972F24D7682000125640 /* SignUpViewController.swift */,
 				2BD64AB124D77FE30011AE31 /* LoginViewController.swift */,
+				2BD64AB324D785380011AE31 /* CustomButton.swift */,
+				2BD64AB524D788260011AE31 /* OptionsViewController.swift */,
 			);
 			path = MonitorTrial;
 			sourceTree = "<group>";
@@ -265,7 +271,9 @@
 				2BD64AB224D77FE30011AE31 /* LoginViewController.swift in Sources */,
 				2B97973024D7682000125640 /* SignUpViewController.swift in Sources */,
 				CE5CE3B024A7827C00E02AAD /* LoginOrSignUpViewController.swift in Sources */,
+				2BD64AB724D788260011AE31 /* OptionsViewController.swift in Sources */,
 				CE5CE3AE24A7827C00E02AAD /* AppDelegate.swift in Sources */,
+				2BD64AB424D785380011AE31 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
