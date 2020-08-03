@@ -11,6 +11,16 @@
 		2BD64AB224D77FE30011AE31 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64AB124D77FE30011AE31 /* LoginViewController.swift */; };
 		2BD64AB424D785380011AE31 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64AB324D785380011AE31 /* CustomButton.swift */; };
 		2BD64AB724D788260011AE31 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64AB524D788260011AE31 /* OptionsViewController.swift */; };
+		2BD64ABB24D853B60011AE31 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64ABA24D853B60011AE31 /* ExploreViewController.swift */; };
+		2BD64ABF24D8549C0011AE31 /* ExploreDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64ABD24D8549C0011AE31 /* ExploreDetailsViewController.swift */; };
+		2BD64AC024D8549C0011AE31 /* ExploreDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD64ABE24D8549C0011AE31 /* ExploreDetailsViewController.xib */; };
+		2BD64AC324D85A8A0011AE31 /* DataClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64AC224D85A8A0011AE31 /* DataClasses.swift */; };
+		2BD64AC724D85B5B0011AE31 /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64AC524D85B5B0011AE31 /* ServiceTableViewCell.swift */; };
+		2BD64AC824D85B5B0011AE31 /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD64AC624D85B5B0011AE31 /* ServiceTableViewCell.xib */; };
+		2BD64ACB24D896540011AE31 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64AC924D896540011AE31 /* NotificationsViewController.swift */; };
+		2BD64ACC24D896540011AE31 /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD64ACA24D896540011AE31 /* NotificationsViewController.xib */; };
+		2BD64ACF24D89E260011AE31 /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64ACD24D89E260011AE31 /* BasicCell.swift */; };
+		2BD64AD024D89E260011AE31 /* BasicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD64ACE24D89E260011AE31 /* BasicCell.xib */; };
 		CE5CE3AE24A7827C00E02AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CE3AD24A7827C00E02AAD /* AppDelegate.swift */; };
 		CE5CE3B024A7827C00E02AAD /* LoginOrSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CE3AF24A7827C00E02AAD /* LoginOrSignUpViewController.swift */; };
 		CE5CE3B324A7827C00E02AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5CE3B124A7827C00E02AAD /* Main.storyboard */; };
@@ -42,6 +52,16 @@
 		2BD64AB124D77FE30011AE31 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2BD64AB324D785380011AE31 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		2BD64AB524D788260011AE31 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		2BD64ABA24D853B60011AE31 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		2BD64ABD24D8549C0011AE31 /* ExploreDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDetailsViewController.swift; sourceTree = "<group>"; };
+		2BD64ABE24D8549C0011AE31 /* ExploreDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreDetailsViewController.xib; sourceTree = "<group>"; };
+		2BD64AC224D85A8A0011AE31 /* DataClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataClasses.swift; sourceTree = "<group>"; };
+		2BD64AC524D85B5B0011AE31 /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		2BD64AC624D85B5B0011AE31 /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
+		2BD64AC924D896540011AE31 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		2BD64ACA24D896540011AE31 /* NotificationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
+		2BD64ACD24D89E260011AE31 /* BasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
+		2BD64ACE24D89E260011AE31 /* BasicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicCell.xib; sourceTree = "<group>"; };
 		CE5CE3AA24A7827C00E02AAD /* MonitorTrial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonitorTrial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5CE3AD24A7827C00E02AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE5CE3AF24A7827C00E02AAD /* LoginOrSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSignUpViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +102,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BD64AB924D853990011AE31 /* Tab Controller Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BD64ABC24D854850011AE31 /* Explore */,
+			);
+			path = "Tab Controller Views";
+			sourceTree = "<group>";
+		};
+		2BD64ABC24D854850011AE31 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				2BD64ABA24D853B60011AE31 /* ExploreViewController.swift */,
+				2BD64ABD24D8549C0011AE31 /* ExploreDetailsViewController.swift */,
+				2BD64ABE24D8549C0011AE31 /* ExploreDetailsViewController.xib */,
+				2BD64AC924D896540011AE31 /* NotificationsViewController.swift */,
+				2BD64ACA24D896540011AE31 /* NotificationsViewController.xib */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		2BD64AC124D85A670011AE31 /* Hellpers */ = {
+			isa = PBXGroup;
+			children = (
+				2BD64AC224D85A8A0011AE31 /* DataClasses.swift */,
+			);
+			path = Hellpers;
+			sourceTree = "<group>";
+		};
+		2BD64AC424D85B0D0011AE31 /* CustomSubviews */ = {
+			isa = PBXGroup;
+			children = (
+				2BD64AC524D85B5B0011AE31 /* ServiceTableViewCell.swift */,
+				2BD64AC624D85B5B0011AE31 /* ServiceTableViewCell.xib */,
+				2BD64ACD24D89E260011AE31 /* BasicCell.swift */,
+				2BD64ACE24D89E260011AE31 /* BasicCell.xib */,
+			);
+			path = CustomSubviews;
+			sourceTree = "<group>";
+		};
 		CE5CE3A124A7827C00E02AAD = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +164,9 @@
 		CE5CE3AC24A7827C00E02AAD /* MonitorTrial */ = {
 			isa = PBXGroup;
 			children = (
+				2BD64AC424D85B0D0011AE31 /* CustomSubviews */,
+				2BD64AC124D85A670011AE31 /* Hellpers */,
+				2BD64AB924D853990011AE31 /* Tab Controller Views */,
 				CE5CE3AD24A7827C00E02AAD /* AppDelegate.swift */,
 				CE5CE3AF24A7827C00E02AAD /* LoginOrSignUpViewController.swift */,
 				CE5CE3B124A7827C00E02AAD /* Main.storyboard */,
@@ -243,7 +305,11 @@
 			files = (
 				CE5CE3B824A7827D00E02AAD /* LaunchScreen.storyboard in Resources */,
 				CE5CE3B524A7827D00E02AAD /* Assets.xcassets in Resources */,
+				2BD64AC024D8549C0011AE31 /* ExploreDetailsViewController.xib in Resources */,
+				2BD64ACC24D896540011AE31 /* NotificationsViewController.xib in Resources */,
+				2BD64AD024D89E260011AE31 /* BasicCell.xib in Resources */,
 				CE5CE3B324A7827C00E02AAD /* Main.storyboard in Resources */,
+				2BD64AC824D85B5B0011AE31 /* ServiceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,10 +335,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BD64AB224D77FE30011AE31 /* LoginViewController.swift in Sources */,
+				2BD64AC324D85A8A0011AE31 /* DataClasses.swift in Sources */,
 				2B97973024D7682000125640 /* SignUpViewController.swift in Sources */,
 				CE5CE3B024A7827C00E02AAD /* LoginOrSignUpViewController.swift in Sources */,
+				2BD64ACF24D89E260011AE31 /* BasicCell.swift in Sources */,
 				2BD64AB724D788260011AE31 /* OptionsViewController.swift in Sources */,
 				CE5CE3AE24A7827C00E02AAD /* AppDelegate.swift in Sources */,
+				2BD64ABF24D8549C0011AE31 /* ExploreDetailsViewController.swift in Sources */,
+				2BD64AC724D85B5B0011AE31 /* ServiceTableViewCell.swift in Sources */,
+				2BD64ACB24D896540011AE31 /* NotificationsViewController.swift in Sources */,
+				2BD64ABB24D853B60011AE31 /* ExploreViewController.swift in Sources */,
 				2BD64AB424D785380011AE31 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
