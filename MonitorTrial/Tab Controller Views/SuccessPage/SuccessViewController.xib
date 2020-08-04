@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessViewController" customModule="MonitorTrial" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SuccessBackground" translatesAutoresizingMaskIntoConstraints="NO" id="YYB-Hn-vmr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YtP-2R-2Mq">
+                    <rect key="frame" x="100" y="142" width="175" height="246"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loader" translatesAutoresizingMaskIntoConstraints="NO" id="Kq3-wC-Eg7">
+                            <rect key="frame" x="0.0" y="0.0" width="175" height="128"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="NrR-2c-453"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successful" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0IM-W8-Yfx">
+                            <rect key="frame" x="0.0" y="138" width="175" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="YgT-5y-7fh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0q-3E-haN">
+                            <rect key="frame" x="0.0" y="188" width="175" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="58" id="mkE-gf-Wth"/>
+                            </constraints>
+                            <state key="normal" image="Return"/>
+                            <connections>
+                                <action selector="btnReturnToActivity:" destination="-1" eventType="touchUpInside" id="xoI-Cu-bBo"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.92916905879974365" green="0.95293480157852173" blue="0.98953372240066528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YtP-2R-2Mq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9xC-62-R56"/>
+                <constraint firstItem="YYB-Hn-vmr" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="EPr-U7-vCe"/>
+                <constraint firstItem="YYB-Hn-vmr" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Lhm-gi-qla"/>
+                <constraint firstItem="YYB-Hn-vmr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="VoU-KB-lmR"/>
+                <constraint firstItem="YYB-Hn-vmr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Vsc-3g-Q0X"/>
+                <constraint firstItem="YtP-2R-2Mq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="142" id="bFa-PS-qam"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="56.799999999999997" y="130.88455772113943"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Return" width="175" height="58"/>
+        <image name="SuccessBackground" width="375" height="815"/>
+        <image name="loader" width="93" height="93"/>
+    </resources>
+</document>

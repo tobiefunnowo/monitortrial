@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpendOnBudgetViewController" customModule="MonitorTrial" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ia8-aa-Sbj">
+                    <rect key="frame" x="16" y="20" width="13" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="13" id="a7o-BB-Khe"/>
+                        <constraint firstAttribute="height" constant="22" id="tc1-qP-vED"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="chevron.left" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
+                    </state>
+                    <connections>
+                        <action selector="handleGoBack:" destination="-1" eventType="touchUpInside" id="sYH-7N-ZAo"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spend On a Budget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjG-Ui-IQc">
+                    <rect key="frame" x="102.5" y="20" width="170" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="hPy-NQ-9oT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.015686274510000001" green="0.17254901959999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE BEST SERVICES WITHIN YOUR LIMIT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7c-nH-uKJ">
+                    <rect key="frame" x="37.5" y="84" width="300" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="Kwp-TK-73W"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How It Works" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhr-f0-LSW">
+                    <rect key="frame" x="135" y="104" width="105.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="0.015686274510000001" green="0.17254901959999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuE-kb-j04">
+                    <rect key="frame" x="22" y="304" width="331" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="331" id="9pc-V2-KP2"/>
+                    </constraints>
+                    <state key="normal" image="NextButton"/>
+                    <connections>
+                        <action selector="handleNext:" destination="-1" eventType="touchUpInside" id="bV5-tg-Wu2"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1j-9u-yBm">
+                    <rect key="frame" x="32" y="157" width="311" height="100.5"/>
+                    <string key="text">We all have budgets, plans for how we want to spend, and at times this might feel like so much work. This feature is here to help you with that. We give you the ability to set a limit while our system computes a list of services with prices totalling either to or less to your limit. These services will also be tailored to your personal preferences of services. </string>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.015686274509803921" green="0.17254901960784313" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.92156862745098034" green="0.93725490196078431" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fhr-f0-LSW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2Zk-G0-TJd"/>
+                <constraint firstItem="NjG-Ui-IQc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2tF-yJ-K86"/>
+                <constraint firstItem="xuE-kb-j04" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="94j-GW-1If"/>
+                <constraint firstItem="Q7c-nH-uKJ" firstAttribute="top" secondItem="NjG-Ui-IQc" secondAttribute="bottom" constant="40" id="LB4-dU-DSU"/>
+                <constraint firstItem="ia8-aa-Sbj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="NrF-Ny-Ogs"/>
+                <constraint firstItem="fhr-f0-LSW" firstAttribute="top" secondItem="Q7c-nH-uKJ" secondAttribute="bottom" constant="8" id="UUY-y5-Kww"/>
+                <constraint firstItem="Q7c-nH-uKJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UlZ-tc-aKC"/>
+                <constraint firstItem="xuE-kb-j04" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VZt-7F-Ve2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a1j-9u-yBm" secondAttribute="trailing" constant="32" id="j9o-Jk-6YV"/>
+                <constraint firstItem="a1j-9u-yBm" firstAttribute="top" secondItem="fhr-f0-LSW" secondAttribute="bottom" constant="32" id="qAA-fy-uww"/>
+                <constraint firstItem="a1j-9u-yBm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="tRs-s1-Mjc"/>
+                <constraint firstItem="ia8-aa-Sbj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="x6J-ER-hGg"/>
+                <constraint firstItem="NjG-Ui-IQc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="z46-VB-D2P"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="106" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NextButton" width="331" height="59"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+    </resources>
+</document>

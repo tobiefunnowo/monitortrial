@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BasedOnYourLimitsViewController" customModule="MonitorTrial" customModuleProvider="target">
+            <connections>
+                <outlet property="tblServices" destination="pPW-ch-2ts" id="Rzl-Y5-eaa"/>
+                <outlet property="view" destination="iAh-bO-cTD" id="Du1-Af-zrC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="iAh-bO-cTD">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="677-A4-cZm">
+                    <rect key="frame" x="16" y="20" width="13" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="c0B-xH-kQt"/>
+                        <constraint firstAttribute="width" constant="13" id="eft-8Y-YEb"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="chevron.left" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
+                    </state>
+                    <connections>
+                        <action selector="handleBack:" destination="-1" eventType="touchUpInside" id="pIE-nA-IIJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Based on your limits..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPs-i3-pgp">
+                    <rect key="frame" x="45" y="20" width="314" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                    <color key="textColor" red="0.015686274510000001" green="0.17254901959999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here are the services we are suggesting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqe-Ld-XUB">
+                    <rect key="frame" x="37.5" y="84" width="300" height="14.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="llO-G3-Ktu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pPW-ch-2ts">
+                    <rect key="frame" x="19" y="117" width="337" height="356"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="356" id="oIu-tw-QI7"/>
+                    </constraints>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4B4-qR-fxf">
+                    <rect key="frame" x="22" y="496" width="331" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="59" id="6dm-LR-ZGA"/>
+                    </constraints>
+                    <state key="normal" image="CreateBundle"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="w6q-YK-qCj" firstAttribute="trailing" secondItem="MPs-i3-pgp" secondAttribute="trailing" constant="16" id="2jj-YB-a1z"/>
+                <constraint firstItem="pPW-ch-2ts" firstAttribute="leading" secondItem="w6q-YK-qCj" secondAttribute="leading" constant="19" id="6rA-ga-tfK"/>
+                <constraint firstItem="677-A4-cZm" firstAttribute="top" secondItem="w6q-YK-qCj" secondAttribute="top" constant="20" id="79z-4M-Vqk"/>
+                <constraint firstItem="677-A4-cZm" firstAttribute="leading" secondItem="w6q-YK-qCj" secondAttribute="leading" constant="16" id="BJm-aF-ZEh"/>
+                <constraint firstItem="w6q-YK-qCj" firstAttribute="trailing" secondItem="4B4-qR-fxf" secondAttribute="trailing" constant="22" id="LQD-3a-Aky"/>
+                <constraint firstItem="4B4-qR-fxf" firstAttribute="top" secondItem="pPW-ch-2ts" secondAttribute="bottom" constant="23" id="QLb-LL-rhQ"/>
+                <constraint firstItem="4B4-qR-fxf" firstAttribute="leading" secondItem="w6q-YK-qCj" secondAttribute="leading" constant="22" id="UkF-3o-aLw"/>
+                <constraint firstItem="pPW-ch-2ts" firstAttribute="top" secondItem="kqe-Ld-XUB" secondAttribute="bottom" constant="18.5" id="b9t-y5-yTL"/>
+                <constraint firstItem="kqe-Ld-XUB" firstAttribute="top" secondItem="MPs-i3-pgp" secondAttribute="bottom" constant="40" id="blv-PA-gsx"/>
+                <constraint firstItem="pPW-ch-2ts" firstAttribute="centerX" secondItem="iAh-bO-cTD" secondAttribute="centerX" id="kgl-tg-stb"/>
+                <constraint firstItem="kqe-Ld-XUB" firstAttribute="centerX" secondItem="iAh-bO-cTD" secondAttribute="centerX" id="oEm-Mv-cz1"/>
+                <constraint firstItem="w6q-YK-qCj" firstAttribute="trailing" secondItem="pPW-ch-2ts" secondAttribute="trailing" constant="19" id="ujG-Nr-Km3"/>
+                <constraint firstItem="MPs-i3-pgp" firstAttribute="leading" secondItem="677-A4-cZm" secondAttribute="trailing" constant="16" id="wBT-qD-dXk"/>
+                <constraint firstItem="MPs-i3-pgp" firstAttribute="top" secondItem="w6q-YK-qCj" secondAttribute="top" constant="20" id="wIm-09-bSZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="w6q-YK-qCj"/>
+            <point key="canvasLocation" x="-354.39999999999998" y="94.902548725637189"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CreateBundle" width="327" height="59"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+    </resources>
+</document>

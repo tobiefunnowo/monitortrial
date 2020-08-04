@@ -29,7 +29,7 @@ class ExploreDetailsViewController: UIViewController {
         tblMain.delegate = self
         tblMain.dataSource = self
         tblMain.register(UINib(nibName: "ServiceTableViewCell", bundle: nil), forCellReuseIdentifier: "ServiceTableViewCell")
-        
+        tblMain.tableFooterView = UIView()
         
         // Do any additional setup after loading the view.
     }
@@ -41,6 +41,7 @@ class ExploreDetailsViewController: UIViewController {
         imgMain.image = UIImage(named: imageName)
         txvMain.text = textViewContent
         tblMain.reloadData()
+        
     }
     
     @IBAction func handleGoBack(_ sender: Any) {
