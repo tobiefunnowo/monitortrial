@@ -35,13 +35,23 @@
                             <constraint firstAttribute="trailing" secondItem="9oN-P7-Gge" secondAttribute="trailing" constant="8" id="vl7-Pb-76a"/>
                         </constraints>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBI-Js-2RU">
+                        <rect key="frame" x="249" y="19.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="gbZ-Vx-WA1" secondAttribute="trailing" constant="16" id="6Cr-n1-OmP"/>
                     <constraint firstItem="gbZ-Vx-WA1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="9iv-dA-ZQ6"/>
                     <constraint firstItem="gbZ-Vx-WA1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="CGh-Od-1jl"/>
                     <constraint firstItem="gbZ-Vx-WA1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QES-Pk-Sff"/>
+                    <constraint firstAttribute="trailing" secondItem="FBI-Js-2RU" secondAttribute="trailing" constant="29" id="RqL-nR-IDY"/>
+                    <constraint firstAttribute="bottom" secondItem="FBI-Js-2RU" secondAttribute="bottom" constant="19.5" id="U9w-K9-F0x"/>
                     <constraint firstItem="gbZ-Vx-WA1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="XGS-MJ-lLw"/>
+                    <constraint firstItem="FBI-Js-2RU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19.5" id="hY5-DS-mLm"/>
+                    <constraint firstItem="FBI-Js-2RU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hgl-WI-8rg"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -49,6 +59,7 @@
             <connections>
                 <outlet property="cardView" destination="gbZ-Vx-WA1" id="Pmd-BY-wjG"/>
                 <outlet property="mainLabel" destination="9oN-P7-Gge" id="Ztk-bo-d6C"/>
+                <outlet property="subLabel" destination="FBI-Js-2RU" id="Lof-1v-UAh"/>
             </connections>
             <point key="canvasLocation" x="105.79710144927537" y="106.47321428571428"/>
         </tableViewCell>

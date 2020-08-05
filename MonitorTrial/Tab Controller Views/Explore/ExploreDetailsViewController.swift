@@ -14,8 +14,9 @@ class ExploreDetailsViewController: UIViewController {
     var stringVieSubtitle = ""
     var imageName = ""
     var textViewContent = ""
-    var listOfServices = [Services]()
-    
+
+	var listOfServices = [Services]()
+	
     @IBOutlet weak var btnGoBack: UIButton!
     @IBOutlet weak var lblViewSubtitle: UILabel!
     @IBOutlet weak var lblViewTitle: UILabel!

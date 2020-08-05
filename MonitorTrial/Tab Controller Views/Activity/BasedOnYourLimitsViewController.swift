@@ -10,13 +10,6 @@ import UIKit
 
 class BasedOnYourLimitsViewController: UIViewController {
 
-	var listOfServices:[Services]!{
-		let firstErvice = Services(imageName: "Netflixlogo", serviceName: "Netflix", servicePrice: "$3300")
-		let secondService = Services(imageName: "Dropboxlogo", serviceName: "Dropbox", servicePrice: "$660")
-		let thirdService = Services(imageName: "Behancelogo", serviceName: "Zen", servicePrice: "$900")
-        let fourthService = Services(imageName: "", serviceName: "Total", servicePrice: "$5400")
-		return [firstErvice,secondService,thirdService,fourthService]
-	}
     @IBOutlet weak var tblServices: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,18 +27,21 @@ class BasedOnYourLimitsViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func handleCreateBundle(_ sender: Any) {
+		navigationController?.pushViewController(SaveOrSubscribeViewController(nibName: "SaveOrSubscribeViewController", bundle: nil), animated: true)
+    }
 }
 
 extension BasedOnYourLimitsViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        listOfServices.count
+        Services.listOfServices.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let serviceCell = tblServices.dequeueReusableCell(withIdentifier: "ServiceTableViewCell") as! ServiceTableViewCell
-		serviceCell.imgCell.image = UIImage(named: listOfServices[indexPath.row].imageName)
-		serviceCell.lblServiceName.text = listOfServices[indexPath.row].serviceName
-		serviceCell.lblServicePrice.text = listOfServices[indexPath.row].servicePrice
+		serviceCell.imgCell.image = UIImage(named: Services.listOfServices[indexPath.row].imageName)
+		serviceCell.lblServiceName.text = Services.listOfServices[indexPath.row].serviceName
+		serviceCell.lblServicePrice.text = Services.listOfServices[indexPath.row].servicePrice
 //        serviceCell.backgroundColor = .clear
         return serviceCell
     }

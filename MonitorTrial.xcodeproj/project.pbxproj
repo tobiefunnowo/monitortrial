@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B352BCF24DADF3B0099E44D /* PresetBundleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B352BCD24DADF3B0099E44D /* PresetBundleViewController.swift */; };
+		2B352BD024DADF3C0099E44D /* PresetBundleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B352BCE24DADF3B0099E44D /* PresetBundleViewController.xib */; };
+		2B352BD324DAEA660099E44D /* CreatYOurBundleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B352BD124DAEA660099E44D /* CreatYOurBundleViewController.swift */; };
+		2B352BD424DAEA660099E44D /* CreatYOurBundleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B352BD224DAEA660099E44D /* CreatYOurBundleViewController.xib */; };
+		2B352BD724DB10B40099E44D /* SaveOrSubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B352BD524DB10B40099E44D /* SaveOrSubscribeViewController.swift */; };
+		2B352BD824DB10B40099E44D /* SaveOrSubscribeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B352BD624DB10B40099E44D /* SaveOrSubscribeViewController.xib */; };
+		2B352BDC24DB35020099E44D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B352BDA24DB35020099E44D /* SettingsViewController.swift */; };
 		2B97973024D7682000125640 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97972F24D7682000125640 /* SignUpViewController.swift */; };
 		2BD64AB224D77FE30011AE31 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64AB124D77FE30011AE31 /* LoginViewController.swift */; };
 		2BD64AB424D785380011AE31 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64AB324D785380011AE31 /* CustomButton.swift */; };
@@ -32,6 +39,17 @@
 		2BD941AE24D9E111000D7E6C /* SetYourLimitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD941AC24D9E111000D7E6C /* SetYourLimitViewController.xib */; };
 		2BD941B124D9E5F5000D7E6C /* BasedOnYourLimitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD941AF24D9E5F5000D7E6C /* BasedOnYourLimitsViewController.swift */; };
 		2BD941B224D9E5F5000D7E6C /* BasedOnYourLimitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD941B024D9E5F5000D7E6C /* BasedOnYourLimitsViewController.xib */; };
+		2BD941B524DA8F35000D7E6C /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD941B424DA8F35000D7E6C /* SubscriptionViewController.swift */; };
+		2BD941B824DA98AD000D7E6C /* FullImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD941B624DA98AD000D7E6C /* FullImageTableViewCell.swift */; };
+		2BD941B924DA98AD000D7E6C /* FullImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD941B724DA98AD000D7E6C /* FullImageTableViewCell.xib */; };
+		2BD941BC24DAA476000D7E6C /* AddSubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD941BA24DAA476000D7E6C /* AddSubscriptionsViewController.swift */; };
+		2BD941BD24DAA476000D7E6C /* AddSubscriptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD941BB24DAA476000D7E6C /* AddSubscriptionsViewController.xib */; };
+		2BD941C124DAA8DF000D7E6C /* SingleSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD941BF24DAA8DF000D7E6C /* SingleSubViewController.swift */; };
+		2BD941C224DAA8DF000D7E6C /* SingleSubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD941C024DAA8DF000D7E6C /* SingleSubViewController.xib */; };
+		2BD941C524DABBB4000D7E6C /* NetflixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD941C324DABBB4000D7E6C /* NetflixViewController.swift */; };
+		2BD941C624DABBB4000D7E6C /* NetflixViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD941C424DABBB4000D7E6C /* NetflixViewController.xib */; };
+		2BD941CA24DADA71000D7E6C /* BundleUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD941C824DADA71000D7E6C /* BundleUpViewController.swift */; };
+		2BD941CB24DADA71000D7E6C /* BundleUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BD941C924DADA71000D7E6C /* BundleUpViewController.xib */; };
 		347F2C2FC0DB7249512CEE77 /* Pods_MonitorTrial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46775A13E8008D0520038A54 /* Pods_MonitorTrial.framework */; };
 		79D6B91EA6BA3F38B48138B4 /* Pods_MonitorTrialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C8D497B6C98A39E30F91B9 /* Pods_MonitorTrialTests.framework */; };
 		A36E021DBE94ECF110454E29 /* Pods_MonitorTrial_MonitorTrialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024AC23E91CE24365C79FD2C /* Pods_MonitorTrial_MonitorTrialUITests.framework */; };
@@ -65,6 +83,13 @@
 		01C8D497B6C98A39E30F91B9 /* Pods_MonitorTrialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonitorTrialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		024AC23E91CE24365C79FD2C /* Pods_MonitorTrial_MonitorTrialUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonitorTrial_MonitorTrialUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		127AA61E5D04A1005EB7BA56 /* Pods-MonitorTrial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorTrial.release.xcconfig"; path = "Target Support Files/Pods-MonitorTrial/Pods-MonitorTrial.release.xcconfig"; sourceTree = "<group>"; };
+		2B352BCD24DADF3B0099E44D /* PresetBundleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetBundleViewController.swift; sourceTree = "<group>"; };
+		2B352BCE24DADF3B0099E44D /* PresetBundleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresetBundleViewController.xib; sourceTree = "<group>"; };
+		2B352BD124DAEA660099E44D /* CreatYOurBundleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatYOurBundleViewController.swift; sourceTree = "<group>"; };
+		2B352BD224DAEA660099E44D /* CreatYOurBundleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatYOurBundleViewController.xib; sourceTree = "<group>"; };
+		2B352BD524DB10B40099E44D /* SaveOrSubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveOrSubscribeViewController.swift; sourceTree = "<group>"; };
+		2B352BD624DB10B40099E44D /* SaveOrSubscribeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveOrSubscribeViewController.xib; sourceTree = "<group>"; };
+		2B352BDA24DB35020099E44D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		2B97972F24D7682000125640 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2BD64AB124D77FE30011AE31 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2BD64AB324D785380011AE31 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -90,6 +115,17 @@
 		2BD941AC24D9E111000D7E6C /* SetYourLimitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetYourLimitViewController.xib; sourceTree = "<group>"; };
 		2BD941AF24D9E5F5000D7E6C /* BasedOnYourLimitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasedOnYourLimitsViewController.swift; sourceTree = "<group>"; };
 		2BD941B024D9E5F5000D7E6C /* BasedOnYourLimitsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasedOnYourLimitsViewController.xib; sourceTree = "<group>"; };
+		2BD941B424DA8F35000D7E6C /* SubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
+		2BD941B624DA98AD000D7E6C /* FullImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageTableViewCell.swift; sourceTree = "<group>"; };
+		2BD941B724DA98AD000D7E6C /* FullImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullImageTableViewCell.xib; sourceTree = "<group>"; };
+		2BD941BA24DAA476000D7E6C /* AddSubscriptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionsViewController.swift; sourceTree = "<group>"; };
+		2BD941BB24DAA476000D7E6C /* AddSubscriptionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddSubscriptionsViewController.xib; sourceTree = "<group>"; };
+		2BD941BF24DAA8DF000D7E6C /* SingleSubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSubViewController.swift; sourceTree = "<group>"; };
+		2BD941C024DAA8DF000D7E6C /* SingleSubViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleSubViewController.xib; sourceTree = "<group>"; };
+		2BD941C324DABBB4000D7E6C /* NetflixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixViewController.swift; sourceTree = "<group>"; };
+		2BD941C424DABBB4000D7E6C /* NetflixViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NetflixViewController.xib; sourceTree = "<group>"; };
+		2BD941C824DADA71000D7E6C /* BundleUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleUpViewController.swift; sourceTree = "<group>"; };
+		2BD941C924DADA71000D7E6C /* BundleUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BundleUpViewController.xib; sourceTree = "<group>"; };
 		3757F08FC74CE88A4A3E5A61 /* Pods-MonitorTrial-MonitorTrialUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorTrial-MonitorTrialUITests.debug.xcconfig"; path = "Target Support Files/Pods-MonitorTrial-MonitorTrialUITests/Pods-MonitorTrial-MonitorTrialUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4202E5135608AD3E88AAB442 /* Pods-MonitorTrial-MonitorTrialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorTrial-MonitorTrialUITests.release.xcconfig"; path = "Target Support Files/Pods-MonitorTrial-MonitorTrialUITests/Pods-MonitorTrial-MonitorTrialUITests.release.xcconfig"; sourceTree = "<group>"; };
 		46775A13E8008D0520038A54 /* Pods_MonitorTrial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonitorTrial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,9 +175,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B352BD924DB34EF0099E44D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2B352BDA24DB35020099E44D /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		2BD64AB924D853990011AE31 /* Tab Controller Views */ = {
 			isa = PBXGroup;
 			children = (
+				2B352BD924DB34EF0099E44D /* Settings */,
+				2BD941B324DA8F1B000D7E6C /* Subscriptions */,
 				2BD941A224D9D335000D7E6C /* SuccessPage */,
 				2BD64AD124D9B9860011AE31 /* Activity */,
 				2BD64ABC24D854850011AE31 /* Explore */,
@@ -176,6 +222,8 @@
 				2BD64AC624D85B5B0011AE31 /* ServiceTableViewCell.xib */,
 				2BD64ACD24D89E260011AE31 /* BasicCell.swift */,
 				2BD64ACE24D89E260011AE31 /* BasicCell.xib */,
+				2BD941B624DA98AD000D7E6C /* FullImageTableViewCell.swift */,
+				2BD941B724DA98AD000D7E6C /* FullImageTableViewCell.xib */,
 			);
 			path = CustomSubviews;
 			sourceTree = "<group>";
@@ -203,6 +251,44 @@
 				2BD941A424D9D34A000D7E6C /* SuccessViewController.xib */,
 			);
 			path = SuccessPage;
+			sourceTree = "<group>";
+		};
+		2BD941B324DA8F1B000D7E6C /* Subscriptions */ = {
+			isa = PBXGroup;
+			children = (
+				2BD941C724DAC255000D7E6C /* BundleUp */,
+				2BD941BE24DAA8CA000D7E6C /* Single Subscription */,
+				2BD941B424DA8F35000D7E6C /* SubscriptionViewController.swift */,
+				2BD941BA24DAA476000D7E6C /* AddSubscriptionsViewController.swift */,
+				2BD941BB24DAA476000D7E6C /* AddSubscriptionsViewController.xib */,
+			);
+			path = Subscriptions;
+			sourceTree = "<group>";
+		};
+		2BD941BE24DAA8CA000D7E6C /* Single Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				2BD941BF24DAA8DF000D7E6C /* SingleSubViewController.swift */,
+				2BD941C024DAA8DF000D7E6C /* SingleSubViewController.xib */,
+				2BD941C324DABBB4000D7E6C /* NetflixViewController.swift */,
+				2BD941C424DABBB4000D7E6C /* NetflixViewController.xib */,
+			);
+			path = "Single Subscription";
+			sourceTree = "<group>";
+		};
+		2BD941C724DAC255000D7E6C /* BundleUp */ = {
+			isa = PBXGroup;
+			children = (
+				2BD941C824DADA71000D7E6C /* BundleUpViewController.swift */,
+				2BD941C924DADA71000D7E6C /* BundleUpViewController.xib */,
+				2B352BCD24DADF3B0099E44D /* PresetBundleViewController.swift */,
+				2B352BCE24DADF3B0099E44D /* PresetBundleViewController.xib */,
+				2B352BD124DAEA660099E44D /* CreatYOurBundleViewController.swift */,
+				2B352BD224DAEA660099E44D /* CreatYOurBundleViewController.xib */,
+				2B352BD524DB10B40099E44D /* SaveOrSubscribeViewController.swift */,
+				2B352BD624DB10B40099E44D /* SaveOrSubscribeViewController.xib */,
+			);
+			path = BundleUp;
 			sourceTree = "<group>";
 		};
 		9455A80E11A58B2631E2F49E /* Frameworks */ = {
@@ -401,9 +487,17 @@
 				2BD941B224D9E5F5000D7E6C /* BasedOnYourLimitsViewController.xib in Resources */,
 				2BD941AE24D9E111000D7E6C /* SetYourLimitViewController.xib in Resources */,
 				CE5CE3B824A7827D00E02AAD /* LaunchScreen.storyboard in Resources */,
+				2BD941C624DABBB4000D7E6C /* NetflixViewController.xib in Resources */,
+				2B352BD424DAEA660099E44D /* CreatYOurBundleViewController.xib in Resources */,
+				2BD941BD24DAA476000D7E6C /* AddSubscriptionsViewController.xib in Resources */,
 				CE5CE3B524A7827D00E02AAD /* Assets.xcassets in Resources */,
+				2BD941C224DAA8DF000D7E6C /* SingleSubViewController.xib in Resources */,
+				2BD941CB24DADA71000D7E6C /* BundleUpViewController.xib in Resources */,
+				2BD941B924DA98AD000D7E6C /* FullImageTableViewCell.xib in Resources */,
 				2BD64AC024D8549C0011AE31 /* ExploreDetailsViewController.xib in Resources */,
 				2BD64ACC24D896540011AE31 /* NotificationsViewController.xib in Resources */,
+				2B352BD024DADF3C0099E44D /* PresetBundleViewController.xib in Resources */,
+				2B352BD824DB10B40099E44D /* SaveOrSubscribeViewController.xib in Resources */,
 				2BD64AD724D9C2BE0011AE31 /* AddCardViewController.xib in Resources */,
 				2BD64AD024D89E260011AE31 /* BasicCell.xib in Resources */,
 				CE5CE3B324A7827C00E02AAD /* Main.storyboard in Resources */,
@@ -537,6 +631,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BD941B824DA98AD000D7E6C /* FullImageTableViewCell.swift in Sources */,
+				2B352BD724DB10B40099E44D /* SaveOrSubscribeViewController.swift in Sources */,
+				2B352BCF24DADF3B0099E44D /* PresetBundleViewController.swift in Sources */,
+				2BD941BC24DAA476000D7E6C /* AddSubscriptionsViewController.swift in Sources */,
 				2BD64AD624D9C2BE0011AE31 /* AddCardViewController.swift in Sources */,
 				2BD64AB224D77FE30011AE31 /* LoginViewController.swift in Sources */,
 				2BD941B124D9E5F5000D7E6C /* BasedOnYourLimitsViewController.swift in Sources */,
@@ -545,14 +643,20 @@
 				CE5CE3B024A7827C00E02AAD /* LoginOrSignUpViewController.swift in Sources */,
 				2BD64ACF24D89E260011AE31 /* BasicCell.swift in Sources */,
 				2BD64AB724D788260011AE31 /* OptionsViewController.swift in Sources */,
+				2B352BD324DAEA660099E44D /* CreatYOurBundleViewController.swift in Sources */,
 				2BD941AD24D9E111000D7E6C /* SetYourLimitViewController.swift in Sources */,
+				2BD941C524DABBB4000D7E6C /* NetflixViewController.swift in Sources */,
+				2BD941B524DA8F35000D7E6C /* SubscriptionViewController.swift in Sources */,
 				2BD941A924D9DA65000D7E6C /* SpendOnBudgetViewController.swift in Sources */,
 				CE5CE3AE24A7827C00E02AAD /* AppDelegate.swift in Sources */,
 				2BD64ABF24D8549C0011AE31 /* ExploreDetailsViewController.swift in Sources */,
+				2BD941C124DAA8DF000D7E6C /* SingleSubViewController.swift in Sources */,
 				2BD64AD324D9B9C70011AE31 /* ActivityViewController.swift in Sources */,
 				2BD64AC724D85B5B0011AE31 /* ServiceTableViewCell.swift in Sources */,
 				2BD64ACB24D896540011AE31 /* NotificationsViewController.swift in Sources */,
+				2B352BDC24DB35020099E44D /* SettingsViewController.swift in Sources */,
 				2BD64ABB24D853B60011AE31 /* ExploreViewController.swift in Sources */,
+				2BD941CA24DADA71000D7E6C /* BundleUpViewController.swift in Sources */,
 				2BD941A524D9D34A000D7E6C /* SuccessViewController.swift in Sources */,
 				2BD64AB424D785380011AE31 /* CustomButton.swift in Sources */,
 			);

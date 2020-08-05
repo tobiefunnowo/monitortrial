@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BundleUpViewController" customModule="MonitorTrial" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1b-L3-BO3">
+                    <rect key="frame" x="16" y="20" width="13" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="UMH-Gr-ejj"/>
+                        <constraint firstAttribute="width" constant="13" id="x6t-bk-RH0"/>
+                    </constraints>
+                    <color key="tintColor" red="0.015686274510000001" green="0.17254901959999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="chevron.left" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
+                    </state>
+                    <connections>
+                        <action selector="handleBack:" destination="-1" eventType="touchUpInside" id="NeS-zc-BFt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bundle Up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3D-Pp-alF">
+                    <rect key="frame" x="45" y="15" width="306" height="32"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                    <color key="textColor" red="0.015686274510000001" green="0.17254901959999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A LOOK AT OUR PRESET BUNDLES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3L-dn-Md6">
+                    <rect key="frame" x="80" y="69" width="215" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.015686274510000001" green="0.17254901959999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTg-xt-LFV">
+                    <rect key="frame" x="56" y="291" width="263" height="190"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="263" id="B08-yb-uUH"/>
+                        <constraint firstAttribute="height" constant="190" id="Ff3-BZ-49x"/>
+                    </constraints>
+                    <state key="normal" image="Bundleup"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naM-iZ-N31">
+                    <rect key="frame" x="18" y="592" width="339" height="59"/>
+                    <state key="normal" image="CreateYourBundle"/>
+                    <connections>
+                        <action selector="handleCreateYOurbundle:" destination="-1" eventType="touchUpInside" id="uP6-BG-uJI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrP-rb-5cO">
+                    <rect key="frame" x="56" y="93" width="263" height="185"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="185" id="HYK-KV-gOY"/>
+                        <constraint firstAttribute="width" constant="263" id="LoL-3p-Yib"/>
+                    </constraints>
+                    <state key="normal" image="Bundleup"/>
+                    <connections>
+                        <action selector="handlePresetBundle:" destination="-1" eventType="touchUpInside" id="q2g-3i-aLw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Y3D-Pp-alF" firstAttribute="leading" secondItem="L1b-L3-BO3" secondAttribute="trailing" constant="16" id="Awh-uL-TbL"/>
+                <constraint firstItem="dTg-xt-LFV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BJW-Nh-EUX"/>
+                <constraint firstItem="naM-iZ-N31" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CYv-qT-O87"/>
+                <constraint firstItem="FrP-rb-5cO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HIz-j0-eqx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="naM-iZ-N31" secondAttribute="bottom" constant="16" id="KSB-Nj-2YK"/>
+                <constraint firstItem="L1b-L3-BO3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Mnn-XI-B5T"/>
+                <constraint firstItem="FrP-rb-5cO" firstAttribute="top" secondItem="w3L-dn-Md6" secondAttribute="bottom" constant="8" id="S2l-qa-FKR"/>
+                <constraint firstItem="L1b-L3-BO3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Xjh-nV-xt2"/>
+                <constraint firstItem="w3L-dn-Md6" firstAttribute="top" secondItem="Y3D-Pp-alF" secondAttribute="bottom" constant="22" id="aoE-ji-tU0"/>
+                <constraint firstItem="dTg-xt-LFV" firstAttribute="top" secondItem="FrP-rb-5cO" secondAttribute="bottom" constant="13" id="k0d-Iu-Pgu"/>
+                <constraint firstItem="Y3D-Pp-alF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="qN6-Bf-hRg"/>
+                <constraint firstItem="w3L-dn-Md6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rw9-BJ-AsM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Y3D-Pp-alF" secondAttribute="trailing" constant="24" id="tzk-kN-1qa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="56.799999999999997" y="130.88455772113943"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bundleup" width="311" height="226"/>
+        <image name="CreateYourBundle" width="339" height="59"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+    </resources>
+</document>

@@ -8,16 +8,26 @@
 
 import Foundation
 
-class Services{
+class Services:Equatable{
+	static func == (lhs: Services, rhs: Services) -> Bool {
+		return lhs.hasBeenSelected == rhs.hasBeenSelected
+	}
+	
     let imageName:String
     let serviceName:String
     let servicePrice:String
+	var hasBeenSelected:Bool
     
-    internal init(imageName: String, serviceName: String, servicePrice: String) {
+	init(imageName: String, serviceName: String, servicePrice: String,beenSelected:Bool) {
         self.imageName = imageName
         self.serviceName = serviceName
         self.servicePrice = servicePrice
+		self.hasBeenSelected = beenSelected
     }
+	
+	static var listOfServices:[Services] = []
+	
+	
 }
 
 

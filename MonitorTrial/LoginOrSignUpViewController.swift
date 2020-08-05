@@ -29,10 +29,27 @@ class LoginOrSignUpViewController: UIViewController{
         btnLogin.layer.borderColor = UIColor.black.cgColor
         btnLogin.layer.cornerRadius = 15
         btnSignUp.layer.cornerRadius = 15
-        // Do any additional setup after loading the view, typically from a nib.
+		fillTheServices()
     }
 
-    
+	func fillTheServices(){
+		let service_1 = Services(imageName: "Netflixlogo", serviceName: "Netflix", servicePrice: "$3300", beenSelected: false)
+		let service_2 = Services(imageName: "Dropboxlogo", serviceName: "Dropbox", servicePrice: "$660", beenSelected: false)
+		let service_3 = Services(imageName: "Behancelogo", serviceName: "Zen", servicePrice: "$900", beenSelected: false)
+		let servie_4 = Services(imageName: "iTunesLogo", serviceName: "iTunes", servicePrice: "$1200", beenSelected: false)
+		let service_5 = Services(imageName: "Behancelogo", serviceName: "Behance", servicePrice: "$900", beenSelected: false)
+		let sercice_6 = Services(imageName: "Spotify Logo", serviceName: "Spotify", servicePrice: "$2100", beenSelected: false)
+		let service_7 = Services(imageName: "AppleTVlogo", serviceName: "AppleTV", servicePrice: "$9000", beenSelected: false)
+		let service_8 = Services(imageName: "playstationlogo", serviceName: "PlaystationPlus", servicePrice: "$2000", beenSelected: false)
+		Services.listOfServices.append(service_1)
+		Services.listOfServices.append(service_2)
+		Services.listOfServices.append(service_3)
+		Services.listOfServices.append(servie_4)
+		Services.listOfServices.append(service_5)
+		Services.listOfServices.append(sercice_6)
+		Services.listOfServices.append(service_7)
+		Services.listOfServices.append(service_8)
+	}
     
 
 }

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NetflixViewController" customModule="MonitorTrial" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="houseCards" translatesAutoresizingMaskIntoConstraints="NO" id="Zfx-ro-Hlk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="231"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="231" id="sR5-L6-tmh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NETFLIX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZM-Ae-Vlf">
+                    <rect key="frame" x="149" y="239" width="76" height="26"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                    <color key="textColor" red="0.6588235294117647" green="0.0" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXV-Kw-2zh">
+                    <rect key="frame" x="32" y="273" width="311" height="143.5"/>
+                    <string key="text">Staying healthy is not a days job, it is a process that shouldnt be taken with laxity. It is as important any other aspect of our lives. Calmness, good night sleep, calming anxiety, and much more can be achieved with the apps below. 
+Staying healthy is not a days job, it is a process that shouldnt be taken with laxity. It is as important any other aspect of our lives. Calmness, good night sleep, calming anxiety, and much more can be achieved with the apps below. </string>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NetflixCell" translatesAutoresizingMaskIntoConstraints="NO" id="LEW-Z7-pya">
+                    <rect key="frame" x="32" y="438" width="311" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="mOi-ff-fSj"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xg9-dK-muy">
+                    <rect key="frame" x="43" y="595" width="288" height="59"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="59" id="wDC-a1-AzP"/>
+                    </constraints>
+                    <state key="normal" image="SubscribeButton"/>
+                    <connections>
+                        <action selector="goToSuccess:" destination="-1" eventType="touchUpInside" id="Mwq-1x-D0n"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="RZM-Ae-Vlf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="149" id="0Ud-mC-HEF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RZM-Ae-Vlf" secondAttribute="trailing" constant="150" id="1Uy-7f-HSO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uXV-Kw-2zh" secondAttribute="trailing" constant="32" id="7kH-XZ-Kkw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LEW-Z7-pya" secondAttribute="trailing" constant="32" id="HQF-bV-JW9"/>
+                <constraint firstItem="uXV-Kw-2zh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="IOQ-cU-bwY"/>
+                <constraint firstItem="LEW-Z7-pya" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="N6B-Jh-pua"/>
+                <constraint firstItem="LEW-Z7-pya" firstAttribute="top" secondItem="uXV-Kw-2zh" secondAttribute="bottom" constant="21.5" id="OOU-pG-7cH"/>
+                <constraint firstItem="Zfx-ro-Hlk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="QRc-WM-CkE"/>
+                <constraint firstItem="RZM-Ae-Vlf" firstAttribute="top" secondItem="Zfx-ro-Hlk" secondAttribute="bottom" constant="8" id="X0o-zQ-8Ry"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xg9-dK-muy" secondAttribute="trailing" constant="44" id="XBY-x3-Xih"/>
+                <constraint firstItem="Zfx-ro-Hlk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bl9-Rf-UB6"/>
+                <constraint firstItem="Zfx-ro-Hlk" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="j6c-cV-qXP"/>
+                <constraint firstItem="xg9-dK-muy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="43" id="mwm-84-sxZ"/>
+                <constraint firstItem="uXV-Kw-2zh" firstAttribute="top" secondItem="RZM-Ae-Vlf" secondAttribute="bottom" constant="8" id="ncZ-Ll-UIn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xg9-dK-muy" secondAttribute="bottom" constant="13" id="xEJ-qO-5kX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="104.8" y="130.88455772113943"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NetflixCell" width="367" height="107"/>
+        <image name="SubscribeButton" width="288" height="59"/>
+        <image name="houseCards" width="329" height="203"/>
+    </resources>
+</document>

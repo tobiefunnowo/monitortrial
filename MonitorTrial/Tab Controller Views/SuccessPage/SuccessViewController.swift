@@ -22,9 +22,21 @@ class SuccessViewController: UIViewController {
 	}
 
     @IBAction func btnReturnToActivity(_ sender: Any) {
-        if let destinationController = navigationController?.viewControllers.filter({$0 is ActivityViewController}).first{
-            navigationController?.popToViewController(destinationController, animated: true)
-        }
+		
+		let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+		if #available(iOS 13.0, *) {
+			let myView = storyBoard.instantiateViewController(identifier: "ExploreTab")
+			myView.modalPresentationStyle = .fullScreen
+			myView.modalTransitionStyle = .crossDissolve
+			self.present(myView, animated: true, completion: nil)
+		} else {
+			// Fallback on earlier versions
+		}
+		
+		
+//        if let destinationController = navigationController?.viewControllers.filter({$0 is ActivityViewController}).first{
+//            navigationController?.popToViewController(destinationController, animated: true)
+//        }
     }
     
     /*

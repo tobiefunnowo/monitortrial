@@ -33,8 +33,8 @@ class ExploreViewController: UIViewController {
     }
     @IBAction func handleGoToUrgeCreate(_ sender: Any) {
         
-        let firstSevice = Services(imageName: "Behancelogo", serviceName: "Behance", servicePrice: "$900")
-        let secondSevice = Services(imageName: "DSTVlogo", serviceName: "Dribble", servicePrice: "$650")
+		let firstSevice = Services(imageName: "Behancelogo", serviceName: "Behance", servicePrice: "$900", beenSelected: false)
+		let secondSevice = Services(imageName: "DSTVlogo", serviceName: "Dribble", servicePrice: "$650", beenSelected: false)
         sentList = []
         sentList?.append(firstSevice)
         sentList?.append(secondSevice)
@@ -43,8 +43,8 @@ class ExploreViewController: UIViewController {
     }
     @IBAction func handleGoToWorkWiser(_ sender: Any) {
         
-        let firstSevice = Services(imageName: "Dropboxlogo", serviceName: "Dropbox", servicePrice: "$600")
-        let secondSevice = Services(imageName: "AppleTVlogo", serviceName: "Apple TV", servicePrice: "$9,000")
+		let firstSevice = Services(imageName: "Dropboxlogo", serviceName: "Dropbox", servicePrice: "$600", beenSelected: false)
+		let secondSevice = Services(imageName: "AppleTVlogo", serviceName: "Apple TV", servicePrice: "$9,000", beenSelected: false)
         sentList = []
         sentList?.append(firstSevice)
         sentList?.append(secondSevice)
@@ -53,7 +53,7 @@ class ExploreViewController: UIViewController {
     }
     @IBAction func handleGoToMeditate(_ sender: Any) {
         
-        let firstSevice = Services(imageName: "Behancelogo", serviceName: "Zen", servicePrice: "$900")
+		let firstSevice = Services(imageName: "Behancelogo", serviceName: "Zen", servicePrice: "$900", beenSelected: false)
         
         sentList = []
         sentList?.append(firstSevice)

@@ -12,9 +12,12 @@ class BasicCell: UITableViewCell {
 
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var mainLabel: UILabel!
+    @IBOutlet weak var subLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         cardView.layer.cornerRadius = 10
+        subLabel.isHidden = true
         // Initialization code
     }
 
