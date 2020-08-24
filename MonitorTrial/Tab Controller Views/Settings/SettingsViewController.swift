@@ -98,6 +98,16 @@ extension SettingsViewController:UITableViewDelegate,UITableViewDataSource{
 			securityView.modalPresentationStyle = .fullScreen
 			present(securityView, animated: true, completion: nil)
 		}
+        
+        if indexPath.section == 2 && indexPath.row == 0{
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let initialVc = storyBoard.instantiateInitialViewController()
+            initialVc?.modalPresentationStyle = .fullScreen
+            if let initialVc = initialVc{
+                self.present(initialVc, animated: true, completion: nil)
+            }
+            
+        }
 	}
 	
 	

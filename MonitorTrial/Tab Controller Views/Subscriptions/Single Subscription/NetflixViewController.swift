@@ -10,10 +10,18 @@ import UIKit
 
 class NetflixViewController: UIViewController {
 
+    @IBOutlet weak var subImage: UIImageView!
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblNarration: UILabel!
+    @IBOutlet weak var imgSubCell: UIImageView!
+	var mySingleSubAsset:SingleSubscriptionAsset!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+		subImage.image = UIImage(named: mySingleSubAsset.mainImage)
+		imgSubCell.image = UIImage(named: mySingleSubAsset.cellImage)
+		lblTitle.text = mySingleSubAsset.title.uppercased()
+        lblTitle.textColor = mySingleSubAsset.subColor
+		
     }
 
     @IBAction func goToSuccess(_ sender: Any) {

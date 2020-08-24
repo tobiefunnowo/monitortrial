@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -11,7 +11,6 @@
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Ca-t2-Qfp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -42,40 +41,42 @@
                                     <constraint firstAttribute="height" constant="164" id="oec-7S-klz"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qL-Sw-jcM">
-                                <rect key="frame" x="48" y="383" width="318" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="bE7-N7-F4R"/>
-                                    <constraint firstAttribute="width" constant="318" id="ckg-Da-sym"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="Mask Group 1"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="NkC-Ti-ezf">
-                                <rect key="frame" x="81" y="437" width="253" height="118"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="118" id="GqY-Ar-wyg"/>
-                                    <constraint firstAttribute="width" constant="253" id="VwJ-Da-SS9"/>
-                                </constraints>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Llo-xd-AHh">
+                                <rect key="frame" x="48" y="362" width="318" height="172"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qL-Sw-jcM">
+                                        <rect key="frame" x="0.0" y="0.0" width="318" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="bE7-N7-F4R"/>
+                                            <constraint firstAttribute="width" constant="318" id="ckg-Da-sym"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Mask Group 1"/>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="NkC-Ti-ezf">
+                                        <rect key="frame" x="32.5" y="54" width="253" height="118"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="118" id="GqY-Ar-wyg"/>
+                                            <constraint firstAttribute="width" constant="253" id="VwJ-Da-SS9"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="f1J-b3-geF" firstAttribute="top" secondItem="IGN-xo-TWR" secondAttribute="top" constant="87" id="20Y-fp-CaN"/>
-                            <constraint firstItem="NkC-Ti-ezf" firstAttribute="top" secondItem="f1J-b3-geF" secondAttribute="bottom" constant="40" id="4zN-1W-XWa"/>
-                            <constraint firstItem="4qL-Sw-jcM" firstAttribute="top" secondItem="CCv-jK-fNC" secondAttribute="bottom" constant="129" id="52b-Xm-aX2"/>
                             <constraint firstItem="CCv-jK-fNC" firstAttribute="leading" secondItem="IGN-xo-TWR" secondAttribute="leading" constant="28" id="9eN-1U-IKO"/>
                             <constraint firstItem="IGN-xo-TWR" firstAttribute="bottom" secondItem="PBt-js-ZhY" secondAttribute="bottom" constant="114" id="Mdg-KF-dNp"/>
-                            <constraint firstItem="NkC-Ti-ezf" firstAttribute="centerX" secondItem="5Ca-t2-Qfp" secondAttribute="centerX" id="NoW-g0-sYC"/>
+                            <constraint firstItem="Llo-xd-AHh" firstAttribute="centerY" secondItem="5Ca-t2-Qfp" secondAttribute="centerY" id="QJL-LR-9i0"/>
                             <constraint firstAttribute="trailing" secondItem="f1J-b3-geF" secondAttribute="trailing" constant="-95" id="SQM-v8-vSF"/>
-                            <constraint firstItem="4qL-Sw-jcM" firstAttribute="centerX" secondItem="5Ca-t2-Qfp" secondAttribute="centerX" id="X10-1Y-ciu"/>
-                            <constraint firstItem="PBt-js-ZhY" firstAttribute="top" secondItem="NkC-Ti-ezf" secondAttribute="bottom" constant="75" id="X8a-2k-7Yc"/>
+                            <constraint firstItem="Llo-xd-AHh" firstAttribute="centerX" secondItem="5Ca-t2-Qfp" secondAttribute="centerX" id="dgq-Xj-UTh"/>
                             <constraint firstItem="PBt-js-ZhY" firstAttribute="centerX" secondItem="5Ca-t2-Qfp" secondAttribute="centerX" id="fKJ-qj-rJd"/>
-                            <constraint firstItem="NkC-Ti-ezf" firstAttribute="top" secondItem="4qL-Sw-jcM" secondAttribute="bottom" constant="8" id="khs-za-Z7N"/>
                             <constraint firstItem="CCv-jK-fNC" firstAttribute="top" secondItem="IGN-xo-TWR" secondAttribute="top" constant="46" id="l2j-TI-hhH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IGN-xo-TWR"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>

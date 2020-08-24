@@ -31,6 +31,7 @@ class ExploreDetailsViewController: UIViewController {
         tblMain.dataSource = self
         tblMain.register(UINib(nibName: "ServiceTableViewCell", bundle: nil), forCellReuseIdentifier: "ServiceTableViewCell")
         tblMain.tableFooterView = UIView()
+		tblMain.separatorStyle = .none
         
         // Do any additional setup after loading the view.
     }
@@ -44,10 +45,16 @@ class ExploreDetailsViewController: UIViewController {
         tblMain.reloadData()
         
     }
+	
+	override func viewDidLayoutSubviews() {
+		  super.viewDidLayoutSubviews()
+		  self.tblMain.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
+	}
     
     @IBAction func handleGoBack(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+	
     
     /*
     // MARK: - Navigation
@@ -77,6 +84,15 @@ extension ExploreDetailsViewController:UITableViewDataSource,UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tblMain.deselectRow(at: indexPath, animated: true)
+		if let mysubasset = SingleSubscriptionAsset.lisOfSingleSubAssets.first(where: {
+			element in element.title == listOfServices[indexPath.row].serviceName
+		}){
+			let NetflixVie = NetflixViewController(nibName: "NetflixViewController", bundle: nil)
+			NetflixVie.modalPresentationStyle = .formSheet
+			NetflixVie.mySingleSubAsset = mysubasset
+			self.present(NetflixVie, animated: true, completion: nil)
+			
+		}
     }
     
 }

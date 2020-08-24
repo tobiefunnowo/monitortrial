@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RealmSwift
+import PKHUD
 
 class LoginViewController: UIViewController {
 
@@ -22,7 +24,7 @@ class LoginViewController: UIViewController {
         curveUIElements(Views: btnSignIn.layer,btnCreateAccount.layer,txtPassword.layer,txtUsername.layer,curvedCardView.layer)
         
         borderElements(Views: txtUsername.layer,txtPassword.layer,btnCreateAccount.layer)
-        
+        spaceTextFields(Views: txtPassword,txtUsername)
         
         // Do any additional setup after loading the view.
     }
@@ -30,7 +32,7 @@ class LoginViewController: UIViewController {
 
     func curveUIElements(Views: CALayer...){
         for view in Views{
-            view.cornerRadius = 15
+            view.cornerRadius = 5
         }
     }
     
@@ -39,11 +41,79 @@ class LoginViewController: UIViewController {
             view.borderWidth = 1
         }
     }
+	
+	func spaceTextFields(Views: UITextField...){
+        for view in Views{
+			let spacerView = UIView(frame:CGRect(x:0, y:0, width:10, height:10))
+			view.leftViewMode = .always
+			view.leftView = spacerView
+        }
+    }
     
     @IBAction func handleBackAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func handleLogin(_ sender: Any) {
+        
+		let config = Realm.Configuration(
+			// Set the new schema version. This must be greater than the previously used
+			// version (if you've never set a schema version before, the version is 0).
+			schemaVersion: 2,
+
+			// Set the block which will be called automatically when opening a Realm with
+			// a schema version lower than the one set above
+			migrationBlock: { migration, oldSchemaVersion in
+				// We haven’t migrated anything yet, so oldSchemaVersion == 0
+				if (oldSchemaVersion < 2) {
+					// Nothing to do!
+					// Realm will automatically detect new properties and removed properties
+					// And will update the schema on disk automatically
+				}
+			})
+
+		// Tell Realm to use this new configuration object for the default Realm
+		Realm.Configuration.defaultConfiguration = config
+		
+		if !(txtUsername.text!.isEmpty || txtPassword.text!.isEmpty){
+			do{
+				let myRealm = try Realm()
+				let monitorUserArray = myRealm.objects(MonitorTrialUsers.self)
+				let containsUser = monitorUserArray.first(where: {
+					element in element.EmailAddress == txtUsername.text! && txtPassword.text! == element.Password
+				})
+				
+				if let containsUser =  containsUser{
+					let storyboard = UIStoryboard(name: "Main", bundle: nil)
+					HelperClass.userEmailAddres = txtUsername.text!
+					let ExploreTab = storyboard.instantiateViewController(withIdentifier: "ExploreTab")
+					let ExploreVC = storyboard.instantiateViewController(withIdentifier: "ExploreVC") as! ExploreViewController
+					HelperClass.sentIndex = Int(containsUser.SelectIExplorendex ?? "0")!
+					ExploreTab.modalPresentationStyle = .fullScreen
+					
+					self.present(ExploreTab, animated: true, completion: nil)
+
+					
+				}else{
+					HUD.flash(.label("Username and Password do not match"),delay: 1)
+					return
+				}
+				
+//				if containsUser != nil{
+//
+//				}
+				
+				
+			}catch(let error){
+				print(error.localizedDescription)
+			}
+		}else{
+			HelperClass.showFillAllfields()
+		}
+		
+        
+        
+    }
     
     /*
     // MARK: - Navigation

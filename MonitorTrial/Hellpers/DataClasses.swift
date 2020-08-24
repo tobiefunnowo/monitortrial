@@ -7,29 +7,62 @@
 //
 
 import Foundation
+import RealmSwift
 
-class Services:Equatable{
-	static func == (lhs: Services, rhs: Services) -> Bool {
-		return lhs.hasBeenSelected == rhs.hasBeenSelected
+class Services:Object{
+	convenience init(imageName: String = "", serviceName: String = "", servicePrice: String = "", beenSelected: Bool = false) {
+		self.init()
+		self.imageName = imageName
+		self.serviceName = serviceName
+		self.servicePrice = servicePrice
+		self.hasBeenSelected = beenSelected
 	}
 	
-    let imageName:String
-    let serviceName:String
-    let servicePrice:String
-	var hasBeenSelected:Bool
+    @objc dynamic var imageName:String = ""
+	@objc dynamic var serviceName:String = ""
+    @objc dynamic var servicePrice:String = ""
+	@objc dynamic var hasBeenSelected:Bool = false
     
-	init(imageName: String, serviceName: String, servicePrice: String,beenSelected:Bool) {
-        self.imageName = imageName
-        self.serviceName = serviceName
-        self.servicePrice = servicePrice
-		self.hasBeenSelected = beenSelected
-    }
-	
 	static var listOfServices:[Services] = []
 	
-	
+	func convertToReceiptItem() -> ReceiptItem{
+		return ReceiptItem(productName: self.serviceName, productCost: self.servicePrice)
+	}
 }
 
+struct ExploreOptions {
+	let imageName:String
+	let imageIndex:Int
+	let goToDetails:()->()
+}
+
+class MonitorTrialUsers: Object{
+	@objc dynamic var Name:String?
+	@objc dynamic var PhoneNumber:String?
+	@objc dynamic var EmailAddress:String?
+	@objc dynamic var Password:String?
+	@objc dynamic var SelectIExplorendex:String?
+	var myServices = List<Services>()
+
+}
+
+class SingleSubscriptionAsset{
+	internal init(mainImage: String, cellImage: String, logoImageName: String, title: String, subColor: UIColor) {
+		self.mainImage = mainImage
+		self.cellImage = cellImage
+		self.logoImageName = logoImageName
+		self.title = title
+		self.subColor = subColor
+	}
+	
+	var mainImage:String
+	var cellImage:String
+	var logoImageName:String
+	var title:String
+	var subColor:UIColor
+	
+	static var lisOfSingleSubAssets = [SingleSubscriptionAsset]()
+}
 
 struct ExploreTextContent {
     static let entertainmentString = """

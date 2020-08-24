@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class SaveOrSubscribeViewController: UIViewController {
     
@@ -46,8 +47,28 @@ class SaveOrSubscribeViewController: UIViewController {
     }
     
     @IBAction func handleBundle(_ sender: Any) {
-        let successView = SuccessViewController(nibName: "SuccessViewController", bundle: nil)
-        self.navigationController?.pushViewController(successView, animated: true)
+		
+		do{
+			let myRealm = try Realm()
+			let userArray = myRealm.objects(MonitorTrialUsers.self)
+			let theUser = userArray.first{
+				element in element.EmailAddress == HelperClass.userEmailAddres
+			}
+			try myRealm.write{
+				if let theUser = theUser{
+					for selectedService in receivedServices{
+						theUser.myServices.append(selectedService)
+					}
+				}
+			}
+			let successView = SuccessViewController(nibName: "SuccessViewController", bundle: nil)
+			self.navigationController?.pushViewController(successView, animated: true)
+			
+		}catch(let error){
+			print(error.localizedDescription)
+		}
+		
+        
     }
 }
 

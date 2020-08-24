@@ -50,11 +50,16 @@ extension SingleSubViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tblServices.deselectRow(at: indexPath, animated: true)
-		if indexPath.row == 0{
+		if let mysubasset = SingleSubscriptionAsset.lisOfSingleSubAssets.first(where: {
+			element in element.title == Services.listOfServices[indexPath.row].serviceName
+		}){
 			let NetflixVie = NetflixViewController(nibName: "NetflixViewController", bundle: nil)
 			NetflixVie.modalPresentationStyle = .formSheet
+			NetflixVie.mySingleSubAsset = mysubasset
 			self.present(NetflixVie, animated: true, completion: nil)
+			
 		}
+			
     }
     
 }

@@ -18,16 +18,7 @@ class PresetBundleViewController: UIViewController {
     @IBOutlet weak var mysubView: UIView!
     @IBOutlet weak var tblReceipt: UITableView!
     
-    var receiptList:[ReceiptItem]{
-        let item_1 = ReceiptItem(productName: "NETFLIX", productCost: "$5400")
-        let item_2 = ReceiptItem(productName: "TIDAL", productCost: "$5400")
-        let item_3 = ReceiptItem(productName: "PLAYSTATION PLUS", productCost: "$5400")
-        let item_4 = ReceiptItem(productName: "SPOTIFY", productCost: "$5400")
-        let item_5 = ReceiptItem(productName: "ESPN+", productCost: "$5400")
-        let item_6 = ReceiptItem(productName: "TOTAL", productCost: "$5400")
-
-        return [item_1,item_2,item_3,item_4,item_5,item_6]
-    }
+    var receiptList:[ReceiptItem] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +27,8 @@ class PresetBundleViewController: UIViewController {
         tblReceipt.delegate = self
         tblReceipt.dataSource = self
 		tblReceipt.register(UINib(nibName: "BasicCell", bundle: nil), forCellReuseIdentifier: "BasicCell")
+		
+		
         // Do any additional setup after loading the view.
     }
 
@@ -44,6 +37,39 @@ class PresetBundleViewController: UIViewController {
         viewSucces.modalPresentationStyle = .fullScreen
         self.present(viewSucces, animated: true, completion: nil)
     }
+	
+	func fillRecipetList(){
+		var hmm:[ReceiptItem]{
+			let item_1 = ReceiptItem(productName: "NETFLIX", productCost: "$5400")
+			let item_2 = ReceiptItem(productName: "TIDAL", productCost: "$5400")
+			let item_3 = ReceiptItem(productName: "PLAYSTATION PLUS", productCost: "$5400")
+			let item_4 = ReceiptItem(productName: "SPOTIFY", productCost: "$5400")
+			let item_5 = ReceiptItem(productName: "ESPN+", productCost: "$5400")
+
+			return [item_1,item_2,item_3,item_4,item_5]
+		}
+		receiptList = hmm
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		if receiptList.isEmpty{
+			fillRecipetList()
+		}
+		appendTotal()
+		tblReceipt.reloadData()
+	}
+	
+	func appendTotal(){
+		var totalCost = 0
+		for hmm in receiptList{
+			let cost = Int(hmm.productCost.replacingOccurrences(of: "$", with: ""))
+			if let cost = cost{
+				totalCost += cost
+			}
+		}
+		receiptList.append(ReceiptItem(productName: "TOTAL", productCost:"$\(totalCost)"))
+	}
 
 }
 

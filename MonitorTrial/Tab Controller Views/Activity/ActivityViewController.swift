@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SafariServices
+
 
 class ActivityViewController: UIViewController {
 
@@ -29,8 +31,16 @@ class ActivityViewController: UIViewController {
     }
     
     @IBAction func btnAddCard(_ sender: Any) {
-        let adCardView = AddCardViewController(nibName: "AddCardViewController", bundle: nil)
-        navigationController?.pushViewController(adCardView, animated: true)
+        
+		let url = URL(string: HelperClass.sampleURLforCard)
+		if let url = url {
+			let safari = SFSafariViewController(url: url)
+			self.present(safari, animated: true, completion: nil)
+		}
+        
+        
+//        let adCardView = AddCardViewController(nibName: "AddCardViewController", bundle: nil)
+//        navigationController?.pushViewController(adCardView, animated: true)
     }
     
 }

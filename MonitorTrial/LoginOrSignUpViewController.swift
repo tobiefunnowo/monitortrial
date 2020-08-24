@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class LoginOrSignUpViewController: UIViewController{
     
@@ -22,6 +23,8 @@ class LoginOrSignUpViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+		//let realm = try! Realm()
+		//print(Realm.Configuration.defaultConfiguration.fileURL!)
         collviewSignUp.dataSource = self
         collviewSignUp.delegate = self
         curvedCardView.layer.cornerRadius = 15
@@ -30,17 +33,22 @@ class LoginOrSignUpViewController: UIViewController{
         btnLogin.layer.cornerRadius = 15
         btnSignUp.layer.cornerRadius = 15
 		fillTheServices()
+		fillTheAssets()
     }
 
 	func fillTheServices(){
-		let service_1 = Services(imageName: "Netflixlogo", serviceName: "Netflix", servicePrice: "$3300", beenSelected: false)
-		let service_2 = Services(imageName: "Dropboxlogo", serviceName: "Dropbox", servicePrice: "$660", beenSelected: false)
-		let service_3 = Services(imageName: "Behancelogo", serviceName: "Zen", servicePrice: "$900", beenSelected: false)
-		let servie_4 = Services(imageName: "iTunesLogo", serviceName: "iTunes", servicePrice: "$1200", beenSelected: false)
-		let service_5 = Services(imageName: "Behancelogo", serviceName: "Behance", servicePrice: "$900", beenSelected: false)
-		let sercice_6 = Services(imageName: "Spotify Logo", serviceName: "Spotify", servicePrice: "$2100", beenSelected: false)
-		let service_7 = Services(imageName: "AppleTVlogo", serviceName: "AppleTV", servicePrice: "$9000", beenSelected: false)
-		let service_8 = Services(imageName: "playstationlogo", serviceName: "PlaystationPlus", servicePrice: "$2000", beenSelected: false)
+		if !Services.listOfServices.isEmpty {
+			return
+		}
+		let service_1 = Services(imageName: "Netflixlogo", serviceName: "Netflix", servicePrice: "$11", beenSelected: false)
+		let service_2 = Services(imageName: "Dropboxlogo", serviceName: "Dropbox", servicePrice: "$70", beenSelected: false)
+		let service_3 = Services(imageName: "Behancelogo", serviceName: "Zen", servicePrice: "$60", beenSelected: false)
+		let servie_4 = Services(imageName: "iTunesLogo", serviceName: "iTunes", servicePrice: "$35", beenSelected: false)
+		let service_5 = Services(imageName: "Behancelogo", serviceName: "Behance", servicePrice: "$40", beenSelected: false)
+		let sercice_6 = Services(imageName: "Spotify Logo", serviceName: "Spotify", servicePrice: "$10", beenSelected: false)
+		let service_7 = Services(imageName: "AppleTVlogo", serviceName: "AppleTV", servicePrice: "$90", beenSelected: false)
+		let service_8 = Services(imageName: "playstationlogo", serviceName: "PlaystationPlus", servicePrice: "$70", beenSelected: false)
+		
 		Services.listOfServices.append(service_1)
 		Services.listOfServices.append(service_2)
 		Services.listOfServices.append(service_3)
@@ -49,6 +57,22 @@ class LoginOrSignUpViewController: UIViewController{
 		Services.listOfServices.append(sercice_6)
 		Services.listOfServices.append(service_7)
 		Services.listOfServices.append(service_8)
+	}
+	
+	func fillTheAssets(){
+		if !SingleSubscriptionAsset.lisOfSingleSubAssets.isEmpty{
+			return
+		}
+		let asset_1 = SingleSubscriptionAsset(mainImage: "mainImageNetflix", cellImage: "NetflixCell", logoImageName: "", title: "Netflix", subColor: .red)
+		let asset_2 = SingleSubscriptionAsset(mainImage: "mainDropboxImage", cellImage: "DroboxSubCell", logoImageName: "", title: "Dropbox", subColor: .blue)
+		let asset_3 = SingleSubscriptionAsset(mainImage: "mainDribble", cellImage: "DribbleCell", logoImageName: "", title: "Dribble", subColor: .systemPink)
+		let asset_4 = SingleSubscriptionAsset(mainImage: "mainZenImage", cellImage: "ZenCell", logoImageName: "", title: "Zen", subColor: .blue)
+		let asset_5 = SingleSubscriptionAsset(mainImage: "mainBehance", cellImage: "BehanceCell", logoImageName: "", title: "Behance", subColor: .blue)
+		let asset_6 = SingleSubscriptionAsset(mainImage: "mainItunes", cellImage: "iTunesCell", logoImageName: "", title: "iTunes", subColor: .red)
+		let asset_7 = SingleSubscriptionAsset(mainImage: "mainSpotify", cellImage: "SpotifySubCell", logoImageName: "", title: "Spotify", subColor: .green)
+		let asset_8 = SingleSubscriptionAsset(mainImage: "mainAppleTV", cellImage: "AppleTvCell", logoImageName: "", title: "AppleTV", subColor: .black)
+		let asset_9 = SingleSubscriptionAsset(mainImage: "mainDstv", cellImage: "DSTVCell", logoImageName: "", title: "DSTV", subColor: .blue)
+		SingleSubscriptionAsset.lisOfSingleSubAssets = [asset_1,asset_2,asset_3,asset_4,asset_5,asset_6,asset_7,asset_8,asset_9]
 	}
     
 

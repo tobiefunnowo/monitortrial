@@ -24,14 +24,11 @@ class SuccessViewController: UIViewController {
     @IBAction func btnReturnToActivity(_ sender: Any) {
 		
 		let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-		if #available(iOS 13.0, *) {
-			let myView = storyBoard.instantiateViewController(identifier: "ExploreTab")
-			myView.modalPresentationStyle = .fullScreen
-			myView.modalTransitionStyle = .crossDissolve
-			self.present(myView, animated: true, completion: nil)
-		} else {
-			// Fallback on earlier versions
-		}
+		let myView = storyBoard.instantiateViewController(withIdentifier: "ExploreTab")
+		myView.modalPresentationStyle = .fullScreen
+		myView.modalTransitionStyle = .crossDissolve
+		self.present(myView, animated: true, completion: nil)
+		
 		
 		
 //        if let destinationController = navigationController?.viewControllers.filter({$0 is ActivityViewController}).first{

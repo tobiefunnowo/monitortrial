@@ -20,6 +20,9 @@
 		2B352BE524DC63240099E44D /* EditProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B352BE324DC63240099E44D /* EditProfileViewController.xib */; };
 		2B352BE824DC63320099E44D /* SecurityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B352BE624DC63320099E44D /* SecurityViewController.swift */; };
 		2B352BE924DC63320099E44D /* SecurityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B352BE724DC63320099E44D /* SecurityViewController.xib */; };
+		2B6E337E24EAA466009E99F4 /* HelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6E337D24EAA466009E99F4 /* HelperClass.swift */; };
+		2B6E338124EAACFD009E99F4 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6E337F24EAACFD009E99F4 /* OptionsTableViewCell.swift */; };
+		2B6E338224EAACFD009E99F4 /* OptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6E338024EAACFD009E99F4 /* OptionsTableViewCell.xib */; };
 		2B97973024D7682000125640 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B97972F24D7682000125640 /* SignUpViewController.swift */; };
 		2BD64AB224D77FE30011AE31 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64AB124D77FE30011AE31 /* LoginViewController.swift */; };
 		2BD64AB424D785380011AE31 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD64AB324D785380011AE31 /* CustomButton.swift */; };
@@ -102,6 +105,9 @@
 		2B352BE324DC63240099E44D /* EditProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileViewController.xib; sourceTree = "<group>"; };
 		2B352BE624DC63320099E44D /* SecurityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityViewController.swift; sourceTree = "<group>"; };
 		2B352BE724DC63320099E44D /* SecurityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecurityViewController.xib; sourceTree = "<group>"; };
+		2B6E337D24EAA466009E99F4 /* HelperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperClass.swift; sourceTree = "<group>"; };
+		2B6E337F24EAACFD009E99F4 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
+		2B6E338024EAACFD009E99F4 /* OptionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsTableViewCell.xib; sourceTree = "<group>"; };
 		2B97972F24D7682000125640 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2BD64AB124D77FE30011AE31 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2BD64AB324D785380011AE31 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -227,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				2BD64AC224D85A8A0011AE31 /* DataClasses.swift */,
+				2B6E337D24EAA466009E99F4 /* HelperClass.swift */,
 			);
 			path = Hellpers;
 			sourceTree = "<group>";
@@ -242,6 +249,8 @@
 				2BD941B724DA98AD000D7E6C /* FullImageTableViewCell.xib */,
 				2B352BDE24DC5B100099E44D /* SettingsTableViewCell.swift */,
 				2B352BDF24DC5B100099E44D /* SettingsTableViewCell.xib */,
+				2B6E337F24EAACFD009E99F4 /* OptionsTableViewCell.swift */,
+				2B6E338024EAACFD009E99F4 /* OptionsTableViewCell.xib */,
 			);
 			path = CustomSubviews;
 			sourceTree = "<group>";
@@ -510,6 +519,7 @@
 				2BD941C624DABBB4000D7E6C /* NetflixViewController.xib in Resources */,
 				2B352BD424DAEA660099E44D /* CreatYOurBundleViewController.xib in Resources */,
 				2BD941BD24DAA476000D7E6C /* AddSubscriptionsViewController.xib in Resources */,
+				2B6E338224EAACFD009E99F4 /* OptionsTableViewCell.xib in Resources */,
 				CE5CE3B524A7827D00E02AAD /* Assets.xcassets in Resources */,
 				2BD941C224DAA8DF000D7E6C /* SingleSubViewController.xib in Resources */,
 				2BD941CB24DADA71000D7E6C /* BundleUpViewController.xib in Resources */,
@@ -654,6 +664,7 @@
 			files = (
 				2BD941B824DA98AD000D7E6C /* FullImageTableViewCell.swift in Sources */,
 				2B352BD724DB10B40099E44D /* SaveOrSubscribeViewController.swift in Sources */,
+				2B6E337E24EAA466009E99F4 /* HelperClass.swift in Sources */,
 				2B352BCF24DADF3B0099E44D /* PresetBundleViewController.swift in Sources */,
 				2BD941BC24DAA476000D7E6C /* AddSubscriptionsViewController.swift in Sources */,
 				2B352BE824DC63320099E44D /* SecurityViewController.swift in Sources */,
@@ -677,6 +688,7 @@
 				2BD941C124DAA8DF000D7E6C /* SingleSubViewController.swift in Sources */,
 				2BD64AD324D9B9C70011AE31 /* ActivityViewController.swift in Sources */,
 				2BD64AC724D85B5B0011AE31 /* ServiceTableViewCell.swift in Sources */,
+				2B6E338124EAACFD009E99F4 /* OptionsTableViewCell.swift in Sources */,
 				2BD64ACB24D896540011AE31 /* NotificationsViewController.swift in Sources */,
 				2B352BDC24DB35020099E44D /* SettingsViewController.swift in Sources */,
 				2BD64ABB24D853B60011AE31 /* ExploreViewController.swift in Sources */,
@@ -859,6 +871,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 283Q35B3B3;
 				INFOPLIST_FILE = MonitorTrial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -877,6 +890,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 283Q35B3B3;
 				INFOPLIST_FILE = MonitorTrial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

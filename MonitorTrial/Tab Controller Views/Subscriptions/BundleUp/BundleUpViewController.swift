@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class BundleUpViewController: UIViewController {
 
@@ -33,6 +34,30 @@ class BundleUpViewController: UIViewController {
     }
     
     
+    @IBAction func goToMyPresetBundle(_ sender: Any) {
+        do{
+            let myRealm = try Realm()
+            let userArray = myRealm.objects(MonitorTrialUsers.self)
+            let firstUSer = userArray.first{
+                element in element.EmailAddress == HelperClass.userEmailAddres
+            }
+            
+            if let firtuser = firstUSer{
+                let usersServices = Array(firtuser.myServices)
+				print(firtuser.Name)
+				let convertedList = usersServices.fillReceiptList()
+                let presetView = PresetBundleViewController(nibName: "PresetBundleViewController", bundle: nil)
+				presetView.receiptList = convertedList
+                presetView.modalPresentationStyle = .formSheet
+                present(presetView, animated: true, completion: nil)
+                
+			}else{
+				print("here")
+			}
+        }catch(let error){
+			print(error.localizedDescription)
+        }
+    }
     /*
     // MARK: - Navigation
 
@@ -43,4 +68,19 @@ class BundleUpViewController: UIViewController {
     }
     */
 
+}
+
+
+extension Array where Element == Services{
+	
+	func fillReceiptList() -> [ReceiptItem] {
+		var receiptItems:[ReceiptItem] = []
+		for service in self{
+			let signleItem = ReceiptItem(productName: service.serviceName, productCost: service.servicePrice)
+			receiptItems.append(signleItem)
+		}
+		
+		return receiptItems
+		
+	}
 }
