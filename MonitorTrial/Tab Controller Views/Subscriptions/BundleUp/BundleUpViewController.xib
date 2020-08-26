@@ -19,13 +19,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1b-L3-BO3">
-                    <rect key="frame" x="16" y="20" width="13" height="22"/>
+                    <rect key="frame" x="16" y="20" width="22" height="22"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="22" id="UMH-Gr-ejj"/>
-                        <constraint firstAttribute="width" constant="13" id="x6t-bk-RH0"/>
+                        <constraint firstAttribute="width" constant="22" id="x6t-bk-RH0"/>
                     </constraints>
                     <color key="tintColor" red="0.015686274510000001" green="0.17254901959999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" image="chevron.left" catalog="system">
+                    <state key="normal" image="left-chevron">
                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
                     </state>
                     <connections>
@@ -33,7 +33,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bundle Up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3D-Pp-alF">
-                    <rect key="frame" x="45" y="15" width="306" height="32"/>
+                    <rect key="frame" x="54" y="15" width="297" height="32"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                     <color key="textColor" red="0.015686274510000001" green="0.17254901959999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -97,6 +97,6 @@
     <resources>
         <image name="Bundleup" width="311" height="226"/>
         <image name="CreateYourBundle" width="339" height="59"/>
-        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="left-chevron" width="128" height="128"/>
     </resources>
 </document>

@@ -29,7 +29,7 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NETFLIX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZM-Ae-Vlf">
-                    <rect key="frame" x="149" y="239" width="76" height="26"/>
+                    <rect key="frame" x="16" y="239" width="343" height="26"/>
                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                     <color key="textColor" red="0.6588235294117647" green="0.0" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -60,9 +60,10 @@ Staying healthy is not a days job, it is a process that shouldnt be taken with l
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <gestureRecognizers/>
             <constraints>
-                <constraint firstItem="RZM-Ae-Vlf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="149" id="0Ud-mC-HEF"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RZM-Ae-Vlf" secondAttribute="trailing" constant="150" id="1Uy-7f-HSO"/>
+                <constraint firstItem="RZM-Ae-Vlf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="0Ud-mC-HEF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RZM-Ae-Vlf" secondAttribute="trailing" constant="16" id="1Uy-7f-HSO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uXV-Kw-2zh" secondAttribute="trailing" constant="32" id="7kH-XZ-Kkw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LEW-Z7-pya" secondAttribute="trailing" constant="32" id="HQF-bV-JW9"/>
                 <constraint firstItem="uXV-Kw-2zh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="IOQ-cU-bwY"/>
@@ -78,8 +79,16 @@ Staying healthy is not a days job, it is a process that shouldnt be taken with l
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xg9-dK-muy" secondAttribute="bottom" constant="13" id="xEJ-qO-5kX"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="P37-7S-H79" appends="YES" id="c5A-W6-HQh"/>
+            </connections>
             <point key="canvasLocation" x="104.8" y="130.88455772113943"/>
         </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="P37-7S-H79">
+            <connections>
+                <action selector="panGestureRecognizerHandler:" destination="-1" id="0jD-hQ-a6O"/>
+            </connections>
+        </panGestureRecognizer>
     </objects>
     <resources>
         <image name="NetflixCell" width="367" height="107"/>

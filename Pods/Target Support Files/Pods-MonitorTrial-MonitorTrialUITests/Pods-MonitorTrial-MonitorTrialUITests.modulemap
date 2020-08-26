@@ -1,0 +1,6 @@
+framework module Pods_MonitorTrial_MonitorTrialUITests {
+  umbrella header "Pods-MonitorTrial-MonitorTrialUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -44,7 +44,7 @@ class BundleUpViewController: UIViewController {
             
             if let firtuser = firstUSer{
                 let usersServices = Array(firtuser.myServices)
-				print(firtuser.Name)
+				print(firtuser.Name ?? "")
 				let convertedList = usersServices.fillReceiptList()
                 let presetView = PresetBundleViewController(nibName: "PresetBundleViewController", bundle: nil)
 				presetView.receiptList = convertedList

@@ -87,7 +87,7 @@ class LoginViewController: UIViewController {
 					let storyboard = UIStoryboard(name: "Main", bundle: nil)
 					HelperClass.userEmailAddres = txtUsername.text!
 					let ExploreTab = storyboard.instantiateViewController(withIdentifier: "ExploreTab")
-					let ExploreVC = storyboard.instantiateViewController(withIdentifier: "ExploreVC") as! ExploreViewController
+					//let ExploreVC = storyboard.instantiateViewController(withIdentifier: "ExploreVC") as! ExploreViewController
 					HelperClass.sentIndex = Int(containsUser.SelectIExplorendex ?? "0")!
 					ExploreTab.modalPresentationStyle = .fullScreen
 					

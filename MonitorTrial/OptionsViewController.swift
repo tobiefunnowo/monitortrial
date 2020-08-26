@@ -60,7 +60,7 @@ class OptionsViewController: UIViewController {
 					try myRealm.write{
 						thisUSer.SelectIExplorendex = selectedIndes?.description
 						let exploreTab = storyBoard.instantiateViewController(withIdentifier: "ExploreTab")
-						let mainExploreVC = storyBoard.instantiateViewController(withIdentifier: "ExploreVC") as! ExploreViewController
+						//let mainExploreVC = storyBoard.instantiateViewController(withIdentifier: "ExploreVC") as! ExploreViewController
 						HelperClass.sentIndex = selectedIndes!
 						self.navigationController?.pushViewController(exploreTab, animated: true)
 					}
